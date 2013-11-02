@@ -61,4 +61,4 @@ The currently version only works with C# projects (including class libraries, co
 
 ## Inspiration and References
 
-This project is greatly inspired on the [work](http://www.codeproject.com/Articles/408663/Using-NRefactory-for-analyzing-Csharp-code) and samples provided by [Daniel Grunwald](http://www.danielgrunwald.de/). Please, check the original article for more information.
+This project is largely inspired on the [work](http://www.codeproject.com/Articles/408663/Using-NRefactory-for-analyzing-Csharp-code) and samples provided by [Daniel Grunwald](http://www.danielgrunwald.de/). Please, check the original article for more information.
