@@ -84,7 +84,6 @@ packages
 # NuGet Publishing Files
 
 *.nupkg
-*.nuspec
 
 # Windows Azure Build Output
 csx

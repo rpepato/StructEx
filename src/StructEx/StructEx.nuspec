@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+	<id>$id$</id>
+	<version>$version$</version>
+	<authors>$author$</authors>
+	<owners>$author$</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/rpepato/StructEx</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Enable the inspection of the contents of a .net solution with C# projects.</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>Source-Code-Analysis CSharpMetadata</tags>
+  </metadata>
+</package>
