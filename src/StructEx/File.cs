@@ -2,9 +2,9 @@
 {
     public class File
     {
-        public Project Project { get; private set; }
-        public string Name { get; private set; }
-        public string Content { get; private set; }
+        public Project Project { get; protected set; }
+        public string Name { get; protected set; }
+        public string Content { get; protected set; }
 
         public File(Project project, string name)
         {

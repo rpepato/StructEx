@@ -52,7 +52,7 @@ namespace StructEx
 
         private bool AssembliesResolved { get; set; }
 
-        private Microsoft.Build.Evaluation.Project MsBuildProject { get; set; }
+        protected Microsoft.Build.Evaluation.Project MsBuildProject { get; private set; }
 
         public string Title { get; private set; }
 

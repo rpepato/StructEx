@@ -10,6 +10,11 @@ namespace StructEx
         private readonly Regex _msbuildProjectDefinitionPattern = new Regex(MSBUILDPROJECTPATTERN, RegexOptions.Compiled);
         private const string CSHARPPROJECTIDENTIFIER = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}";
 
+        protected Solution()
+        {
+            
+        }
+
         public Solution(string path)
         {
             Projects = new List<Project>();
@@ -37,9 +42,13 @@ namespace StructEx
             }
         }
 
-        public string Path { get; private set; }
+        protected Regex MSBuildProjectDefinitionPattern { get { return _msbuildProjectDefinitionPattern; }}
 
-        public IList<Project> Projects { get; private set; }
+        protected string CSharpProjectIdentifier { get { return CSHARPPROJECTIDENTIFIER; } }
+
+        public string Path { get; protected set; }
+
+        public IList<Project> Projects { get; protected set; }
 
         public string Name
         {
