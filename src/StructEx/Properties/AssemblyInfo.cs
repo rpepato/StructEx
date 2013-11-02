@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("StructEx")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Enables the inspection of the contents of .net solutions and c# projects")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Roberto Pepato")]
 [assembly: AssemblyProduct("StructEx")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright ©  2013 Roberto Pepato")]
+[assembly: AssemblyTrademark("Roberto Pepato")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
