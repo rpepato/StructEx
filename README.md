@@ -57,7 +57,7 @@ foreach(var project in solution.Projects)
 
 ## Limitations
 
-The currently version only works with C# projects (including class libraries, console, windows forms, asp.net mvc, and other project types)
+The current version only works with C# projects (including class libraries, console, windows forms, asp.net mvc, and other project types)
 
 ## Inspiration and References
 
