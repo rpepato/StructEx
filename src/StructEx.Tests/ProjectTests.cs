@@ -112,7 +112,8 @@ namespace StructEx.Tests
         {
             var solution = CreateSolutionFor("CompositeSolution", "CompositeSolution.sln");
             var solutionFiles = solution.Projects.SelectMany(p => p.Files);
-            solutionFiles.Count().Should().Be(15);
+            solutionFiles.Count().Should().Be(21);
+            solutionFiles.Select(a => a.Name).Where(a => a.EndsWith(".cs")).Count().Should().Be(21);
             var project = solution.Projects.First();
             string[] files = { "Class1", "AssemblyInfo", "Program", "Form1", "Form1.Designer", "Resources.Designer", "Settings.Designer", "AccountController", "HomeController", "Global.asax", "AccountModels" };
             foreach (var file in files)
