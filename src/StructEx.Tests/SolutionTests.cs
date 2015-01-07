@@ -55,5 +55,12 @@ namespace StructEx.Tests
             var solution = new Solution(solutionPath);
             solution.Name.Should().Be("CompositeSolution");
         }
+
+        [Test]
+        public void ShouldThrowExceptionOnInvalidSolutionFile()
+        {
+            var solutionPath = "Inexistent.sln";
+            (new Action(() => new Solution(solutionPath))).Should().Throw<FileNotFoundException>();
+        }
     }
 }

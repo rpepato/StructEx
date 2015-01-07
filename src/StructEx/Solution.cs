@@ -31,11 +31,6 @@ namespace StructEx
         private readonly Regex _msbuildProjectDefinitionPattern = new Regex(MSBUILDPROJECTPATTERN, RegexOptions.Compiled);
         private const string CSHARPPROJECTIDENTIFIER = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}";
 
-        protected Solution()
-        {
-            
-        }
-
         public Solution(string path)
         {
             Projects = new List<Project>();
@@ -44,10 +39,10 @@ namespace StructEx
                 Path = path;
                 foreach (var line in System.IO.File.ReadLines(Path))
                 {
-                    var match = _msbuildProjectDefinitionPattern.Match(line);
+                    var match = MSBuildProjectDefinitionPattern.Match(line);
                     if (match.Success)
                     {
-                        if (match.Groups["TypeGuid"].Value.ToUpperInvariant().Equals(CSHARPPROJECTIDENTIFIER))
+                        if (match.Groups["TypeGuid"].Value.ToUpperInvariant().Equals(CSharpProjectIdentifier))
                         {
                             Projects.Add(new Project(this,
                                                             match.Groups["Title"].Value,
